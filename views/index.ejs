@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📌Registration app</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Bhart Intern FullStack Development Project - Task 1</h3>
+        <div class="register-container">
+            <div class="left">
+                <img src="./img/img.jpg" alt="">
+            </div>
+            <div class="right">
+                <% if (message.length > 0) { %>
+                    <div class="flash-msg">
+                        <%= message %>
+                    </div>
+                <% } %>
+                <h1>Registration</h1>
+                <div class="form-container">
+                    <form action="/api/auth/users/register" method="post">
+                        <div class="input-div">
+                            <!-- <label for="">Full Name</label> -->
+                            <input type="text" placeholder="Full Name" name="name">
+                        </div>
+                        <div class="input-div">
+                            <!-- <label for="">Phone</label> -->
+                            <input type="text" placeholder="Phone" name="phone">
+                        </div>
+                        <div class="input-div">
+                            <!-- <label for="">Email</label> -->
+                            <input type="text" placeholder="Email" name="email">
+                        </div>
+                        <div class="input-div">
+                            <!-- <label for="">Password</label> -->
+                            <input type="password" placeholder="Password" name="password">
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
